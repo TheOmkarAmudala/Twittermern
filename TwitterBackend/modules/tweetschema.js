@@ -9,7 +9,7 @@ const TweetSchema = new mongoose.Schema({
         type:Array,
         default: []
     },
-    userIs{
+    userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref: "user"
     },

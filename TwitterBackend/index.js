@@ -3,6 +3,7 @@ import  dotenv from "dotenv";
 import dataBaseConnection from "./config/database.js";
 import cookieParser from  "cookie-parser"
 import router from "./routers/usercreation.js"
+import router1 from "./routers/tweetroute.js"
 
 dotenv.config({
     path:".env"
@@ -22,10 +23,15 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.json());
 app.use("/api/v1/user", router);
+app.use("/api/v1/tweet", router1);
 
 
 
-
+app.get("/home", (req,res)=> {
+    res.status(200).json({
+        message: "coming from bckend"
+    })
+})
 
 
 app.listen(3000, ()=> {
