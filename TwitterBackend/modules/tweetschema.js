@@ -12,10 +12,6 @@ const TweetSchema = new mongoose.Schema({
     userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref: "user"
-    },
-    bookmarks:{
-        type:Array,
-        default: []
     }
 },{timestamps:true});
 

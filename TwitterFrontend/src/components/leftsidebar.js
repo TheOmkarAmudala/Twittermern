@@ -76,7 +76,7 @@ const leftsiderbar = () => {
                 <div>
                     <IoMdPerson  className="size-7"/>
                 </div>
-                <Link to={"/Profile"}>
+                <Link to={"/Profile/${id}"}>
                 <h1 className='font-semibold ml-2'>Profile</h1>
                 </Link>
             </div>
