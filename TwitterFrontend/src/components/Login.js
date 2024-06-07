@@ -89,20 +89,20 @@ const Login = () => {
                 <form className="flex flex-col h-[300px] justify-evenly" onSubmit={submit}>
                     {
                         isLogin && (<>
-                            <input type="name" value={name} onChange={(e) => setname(e.target.value)} placeholder="name"
-                                   className="w-[300px] h-[30px] pl-3 rounded-3xl border border-gray-300 outline-none"/>
                             <input type="username" value={username} onChange={(e) => setusername(e.target.value)}
                                    placeholder="username"
-                                   className="w-[300px] h-[30px] pl-3 rounded-full border border-gray-300 outline-none"/>
+                                   className="w-[300px] h-[40px] pl-3 rounded-full border border-gray-300 outline-none focus:outline-blue-500"/>
+                            <input type="name" value={name} onChange={(e) => setname(e.target.value)} placeholder="name"
+                                   className="w-[300px] h-[40px] pl-3 rounded-3xl border border-gray-300 outline-none focus:outline-blue-500"/>
 
                         </>)
                     }
 
+                    <input type="email" value={email} onChange={(e) => setemail(e.target.value)} placeholder="email"
+                           className="w-[300px] h-[40px] pl-3 rounded-full border border-gray-300 outline-none focus:outline-blue-500"/>
                     <input type="password" value={password} onChange={(e) => setpassword(e.target.value)}
                            placeholder="password"
-                           className="w-[300px] h-[30px] pl-3 rounded-full border border-gray-300 outline-none"/>
-                    <input type="email" value={email} onChange={(e) => setemail(e.target.value)} placeholder="email"
-                           className="w-[300px] h-[30px] pl-3 rounded-full border border-gray-300 outline-none"/>
+                           className="w-[300px] h-[40px] pl-3 rounded-full border border-gray-300 outline-none focus:outline-blue-500"/>
 
                     <h1 className="mt-5">{isLogin ? "No Acoount, No problem " : "Login"} <span
                         className="text-blue-500 font-bold"

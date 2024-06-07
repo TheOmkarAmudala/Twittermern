@@ -12,7 +12,7 @@ const useGetuser = (id) => {
                 const res = await axios.get(`${API_KEY_USER}/all_profiles/${id}`, {
                     withCredentials: true
                 });
-                console.log(res)
+
                 dispatch(getotherusers(res.data.otherusers))
             } catch (e) {
                 console.error(e);

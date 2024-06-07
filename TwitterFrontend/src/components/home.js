@@ -13,6 +13,12 @@ const Home = () => {
     const {user, otherusers} = useSelector(store => store.user)
     useGetuser(user?._id)
     useTweet(user?._id)
+    console.log(user?._id)
+
+
+
+
+
 
     return (
         <div className="flex ">

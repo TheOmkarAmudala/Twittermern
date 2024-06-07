@@ -12,6 +12,9 @@ const Profile = () => {
     const {profile,user} =useSelector(store => store.user)
     const {id} = useParams()
      useGetProfile(id);
+     const followAndUnfollowHandler = {
+
+     }
 
     return (
         <div className="w-[40%] border border-gray-100 h-[25%]">
@@ -30,7 +33,10 @@ const Profile = () => {
             <Avatar className="border-2 border-white" src='https://th.bing.com/th/id/OIP.j-X3_4gjV2-JKwu4A_M9egHaLJ?w=202&h=305&c=7&r=0&o=5&dpr=1.3&pid=1.7' size={120} round={true}  />
             </div>
             <div className="mt-20 ml-3">
+                <div className="flex space-x-[400px]">
                 <h1 className="font-bold"> {profile?.name}</h1>
+                    <button onClick={followAndUnfollowHandler} className="bg-black text-white border rounded-3xl w-[100px] h-[30px] flex pl-6 pt-0.5">Follow</button>
+                </div>
                 <h2 className="text-gray-500">{profile?.username}</h2>
                 <h3 className="mt-3">Dream companies are Microsoft and Google</h3>
                 <h3 className="text-gray-500 mt-2">
@@ -52,8 +58,9 @@ const Profile = () => {
                         <h1>Followers</h1>
                     </div>
                 </div>
+
             </div>
-            <Tweet/>
+
         </div>
     );
 }

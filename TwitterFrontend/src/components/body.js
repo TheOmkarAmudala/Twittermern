@@ -9,6 +9,10 @@ import Existing from "./existing account";
 const Body = () => {
     const appRouter = createBrowserRouter([
         {
+            path: "/Login",
+            element: <Login />,
+        },
+        {
             path: "/",
             element: <Home />,
             children: [
@@ -21,11 +25,7 @@ const Body = () => {
                     element:<Profile />
                 }
             ]
-        },
-        {
-            path: "/Login",
-            element: <Login />,
-        },
+        }
 
     ]);
 
