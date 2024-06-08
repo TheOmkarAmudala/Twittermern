@@ -41,7 +41,7 @@ const Login = () => {
                     }
                     navigate("/");
                 } catch (e) {
-                    console.log(e);
+                    console.log("hi");
                     reject(e.res.data.message);
                 }
             } else {
