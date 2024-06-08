@@ -38,6 +38,7 @@ app.get("/home", (req,res)=> {
     res.status(200).json({
         message: "coming from bckend"
     })
+    console.log("hi,welcome");
 })
 
 
