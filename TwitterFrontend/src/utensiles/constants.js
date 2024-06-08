@@ -1,4 +1,4 @@
-export const API_KEY_USER = "http://127.0.0.1:3000/api/v1/user"
-export const API_KEY_TWEET = "http://localhost:3000/api/v1/tweet"
+export const API_KEY_USER = "http://https://twittermern-1wdc.vercel.app//api/v1/user"
+export const API_KEY_TWEET = "http://https://twittermern-1wdc.vercel.app//api/v1/tweet"
 
 
